@@ -1,6 +1,8 @@
 import "./HighScore.css";
 
 const HighScore = ({ countryName, scores }) => {
+  scores.sort((a, b) => b.s - a.s);
+
   return (
     <>
       <div>
@@ -15,13 +17,13 @@ const HighScore = ({ countryName, scores }) => {
                     <td>{score.s}</td>
                   </tr>
                 );
-                })}
+              })}
             </tbody>
           </table>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default HighScore;
