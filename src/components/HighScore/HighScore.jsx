@@ -1,7 +1,12 @@
 import "./HighScore.css";
 
-const HighScore = ({ countryName, scores }) => {
-  scores.sort((a, b) => b.s - a.s);
+const HighScore = ({ countryName, scores, isAscending }) => {
+  scores.sort(function (a, b) {
+    if (isAscending) {
+      return a.s - b.s;
+    }
+    return b.s - a.s;
+  });
 
   return (
     <>
