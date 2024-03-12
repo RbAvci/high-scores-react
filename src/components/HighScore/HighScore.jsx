@@ -10,7 +10,7 @@ const HighScore = ({ countryName, scores, isAscending }) => {
 
   return (
     <>
-      <div>
+      <div className="score-card">
         <h2>High Scores: {countryName}</h2>
         <div>
           <table>
