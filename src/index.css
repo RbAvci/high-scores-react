@@ -37,9 +37,17 @@ h1 {
   text-shadow: 2px 2px #ff8c00;
 }
 
+h1:hover {
+  background-color: darkorange;
+}
+
 h2 {
   font-size: 2rem;
   border-bottom: 2px solid #2135475c;
+}
+
+h2:hover {
+  background-color: rgb(222, 201, 193);
 }
 
 button {
@@ -74,6 +82,17 @@ button:focus-visible {
   align-items: flex-end;
   background-color: darkorange;
 }
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: rgb(222, 201, 193);
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
